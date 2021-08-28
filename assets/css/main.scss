@@ -116,6 +116,12 @@ header {
                 padding: 17px 0 17px 30px;
                 a {
                     margin-right: 22px;
+                    &:hover {
+                        color: #f7941d;
+                        @media screen and (max-width: 992px) {
+                            color: #222222;
+                        }
+                    }
                 }
                 @media screen and (max-width: 992px) {
                     background-color: #f7941d;
@@ -634,7 +640,7 @@ header {
                     top: 20px;
                     left: -90%;
                     opacity: 0;
-                    width: calc(100% - 10px);
+                    width: 90%;
                     height: calc(100% - 20px);
                     transition: 0.4s ease-in-out;
                     z-index: 6;
