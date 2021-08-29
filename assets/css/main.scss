@@ -635,7 +635,7 @@ header {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    clip-path: polygon(0 0, 78% 0, 100% 20%, 100% 100%, 0 100%);
+                    clip-path: polygon(0 0, 85% 0, 100% 15%, 100% 100%, 0 100%);
                     padding: 0 3rem 0 2rem;
                     top: 20px;
                     left: -90%;
@@ -725,6 +725,97 @@ header {
                 &.slick-active {
                     button {
                         background-color: #f7941d;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.expert {
+    padding: 100px 0;
+    .expertGrid {
+        &__item {
+            margin-bottom: 40px;
+            &--img {
+                position: relative;
+                padding-left: 50px;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+                .expert-social {
+                    background-color: #222222;
+                    width: 50px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    z-index: 10;
+                    a {
+                        font-size: 16px;
+                        display: block;
+                        width: 100%;
+                        height: 50px;
+                        line-height: 50px;
+                        text-align: center;
+                        &:hover {
+                            background-color: #f7941d;
+                            clip-path: polygon(25% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
+                        }
+                    }
+                }
+                .expert-link {
+                    a {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        z-index: 9;
+                    }
+                }
+            }
+            &--info {
+                position: relative;
+                padding-left: 50px;
+                .expert-detail {
+                    background-color: #222222;
+                    padding: 23px 30px;
+                    h4 {
+                        font-size: 20px;
+                        line-height: 1;
+                        margin-bottom: 8px;
+                    }
+                    span {
+                        color: #f7941d;
+                        font-size: 14px;
+                        line-height: 1;
+                    }
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 25px;
+                    width: 1px;
+                    height: 54px;
+                    border-left: 1px dashed #bbbbbb;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 53px;
+                    left: 25px;
+                    width: 25px;
+                    height: 1px;
+                    border-top: 1px dashed #bbbbbb;
+                }
+            }
+            &:hover {
+                .expert-detail {
+                    background-color: #f7941d;
+                    span {
+                        color: #ffffff;
                     }
                 }
             }
