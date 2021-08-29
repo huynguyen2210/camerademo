@@ -877,10 +877,10 @@ header .bottomHeader .navbar-expand-xl .navbar-collapse .navbar-tool button:hove
 
 .expert .expertGrid__item--img .expert-link a {
   position: absolute;
-  width: 100%;
+  width: calc(100% - 50px);
   height: 100%;
   top: 0;
-  left: 0;
+  left: 50px;
   z-index: 9;
 }
 
