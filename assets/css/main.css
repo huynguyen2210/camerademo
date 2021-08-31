@@ -833,6 +833,122 @@ header .bottomHeader .navbar-expand-xl .navbar-collapse .navbar-tool button:hove
   background-color: #f7941d;
 }
 
+.caseStudy {
+  position: relative;
+  background: url(../images/bg2.jpg) right no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: 40% 100%;
+  padding: 100px 0 87px;
+}
+
+.caseStudy::before {
+  content: '';
+  background-color: #f7941d;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+.caseStudy .caseStudy-title h1::before {
+  left: 0;
+  -webkit-transform: unset;
+          transform: unset;
+}
+
+.caseStudy .caseStudy-title h1::after {
+  left: 15px;
+  -webkit-transform: unset;
+          transform: unset;
+}
+
+.caseStudy__slider .slick-dots {
+  width: unset;
+  left: 0;
+  bottom: 0;
+}
+
+.caseStudy__slider .slick-dots li {
+  position: relative;
+  margin-left: 0;
+  width: unset;
+  height: unset;
+  margin: 0 5px;
+  z-index: 99;
+}
+
+.caseStudy__slider .slick-dots li:first-of-type {
+  margin-left: 0;
+}
+
+.caseStudy__slider .slick-dots li button {
+  position: relative;
+  width: 30px;
+  height: 4px;
+  padding: 0;
+  border-radius: 0;
+  background-color: #cccccc;
+  opacity: 1;
+}
+
+.caseStudy__slider .slick-dots li button::before {
+  content: '';
+  width: unset;
+  height: unset;
+  opacity: 1;
+}
+
+.caseStudy__slider .slick-dots li.slick-active button {
+  background-color: #f7941d;
+}
+
+.caseStudy__slider--item .caseStudy-text .caseStudy-cat {
+  color: #f7941d;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.caseStudy__slider--item .caseStudy-text h2 {
+  color: #222222;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 15px;
+}
+
+.caseStudy__slider--item .caseStudy-text .caseStudy-descript {
+  color: #777777;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.caseStudy__slider--item .caseStudy-text p {
+  color: #666666;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 54px;
+}
+
+.caseStudy__slider--item .caseStudy-text button {
+  color: #f7941d;
+  font-weight: 600;
+  font-size: 16px;
+  height: 50px;
+  padding: 0 35px;
+  border: 1px solid #f7941d;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.caseStudy__slider--item .caseStudy-text button:hover, .caseStudy__slider--item .caseStudy-text button:active, .caseStudy__slider--item .caseStudy-text button:focus {
+  color: #fff;
+  background-color: #f7941d;
+}
+
 .expert {
   padding: 100px 0;
 }
